@@ -1,0 +1,155 @@
+/* Navbar Styles */
+
+.navbarcon {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  min-height: 60px;
+  margin-top: 90px;
+  border: solid 1px black;
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Nav Menu Styles */
+
+.navMenucon {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navLinkcon {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+/* Button Styles */
+
+.conbutton {
+  border-radius: 5px;
+  border: none;
+  background-color: #25ca2e;
+  color: #fff;
+  height: 50px;
+  width: 300px;
+  margin-left: 150px;
+  text-align: center;
+  cursor: pointer; 
+}
+
+.conbutton:hover {
+  background-color: #51da39;
+}
+
+/* Dropdown Styles */
+
+.dropdown {
+  list-style: none;
+  margin-top: 10px;
+  margin-left: -100px;
+  position: absolute; 
+  border: solid 1px rgb(80, 80, 80);
+  padding: 10px;
+}
+
+.dropbutton {
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  margin-bottom: 5px;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer; 
+}
+
+.dropbutton:hover {
+  background-color: #23527c;
+}
+
+/* Image Container Styles */
+
+.image-container-con {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+.imagecon {
+  width: 100%; 
+  height: auto; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .navbarcon {
+    margin-top: 70px; /* Reduce margin top for larger screens */
+  }
+  .image-container-con {
+    top: 150px; /* Reduce top margin for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbarcon {
+    margin-top: 50px; /* Reduce margin top for medium screens */
+  }
+  .image-container-con {
+    top: 120px; /* Reduce top margin for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbarcon {
+    margin-top: 30px; /* Reduce margin top for smaller screens */
+  }
+  .image-container-con {
+    top: 90px; /* Reduce top margin for smaller screens */
+  }
+  .navMenucon {
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+  }
+  .navLinkcon {
+    margin-right: 10px; /* Reduce margin right for smaller screens */
+  }
+  .conbutton {
+    width: 200px; /* Reduce button width for smaller screens */
+  }
+  .dropbutton {
+    width: 150px; /* Reduce dropdown button width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarcon {
+    margin-top: 20px; /* Reduce margin top for very small screens */
+  }
+  .image-container-con {
+    top: 60px; /* Reduce top margin for very small screens */
+  }
+  .navMenucon {
+    flex-direction: column; /* Stack menu items vertically on very small screens */
+  }
+  .navLinkcon {
+    margin-right: 5px; /* Reduce margin right for very small screens */
+  }
+  .conbutton {
+    width: 150px; /* Reduce button width for very small screens */
+  }
+  .dropbutton {
+    width: 100px
+  }
+}

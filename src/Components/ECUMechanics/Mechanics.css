@@ -1,0 +1,128 @@
+/* Navbar Styles */
+
+.navbarMech {
+  background-color: #fff;
+  width: 400px;
+  margin-left: 20px;
+  height: 87vh;
+  border: solid 1px black;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  position: absolute;
+}
+
+/* Nav Menu Styles */
+
+.navMenuMech {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.navLinkMech {
+  text-decoration: none;
+  color: #fff; /* Change text color for better contrast and visibility */
+  font-size: 18px;
+  margin-bottom: 20px; /* Reduce margin bottom for better spacing */
+  padding-bottom: 10px; /* Reduce padding bottom for better spacing */
+}
+
+/* Button Styles */
+
+.hwbuttonMech {
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #337ab7;
+  cursor: pointer;
+}
+
+.hwbuttonMech:hover {
+  background-color: #23527c;
+}
+
+/* Image Container Styles */
+
+.image-containerMech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh; /* Make the image container responsive */
+  width: 900px;
+  margin-left: 400px;
+  padding: 20px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.image-containerMech img {
+  width: 100%; /* Make the image responsive */
+  height: 85vh; /* Maintain aspect ratio */
+  max-width: 1000px; /* Set a maximum width for the image */
+  margin-left: 200px; /* Adjust margin left for better positioning */
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .navbarMech {
+    width: 350px; /* Reduce navbar width for larger screens */
+  }
+  .image-containerMech {
+    margin-left: 200px; /* Adjust margin left for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbarMech {
+    width: 300px; /* Reduce navbar width for medium screens */
+  }
+  .image-containerMech {
+    margin-left: 150px; /* Adjust margin left for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbarMech {
+    width: 250px; /* Reduce navbar width for smaller screens */
+  }
+  .image-containerMech {
+    margin-left: 100px; /* Adjust margin left for smaller screens */
+  }
+  .navMenuMech {
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+  }
+  .navLinkMech {
+    margin-bottom: 10px; /* Reduce margin bottom for smaller screens */
+  }
+  .hwbuttonMech {
+    width: 200px; /* Reduce button width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarMech {
+    width: 200px; /* Reduce navbar width for very small screens */
+  }
+  .image-containerMech {
+    margin-left: 50px; /* Adjust margin left for very small screens */
+  }
+  .navMenuMech {
+    flex-direction: column; /* Stack menu items vertically on very small screens */
+  }
+  .navLinkMech {
+    margin-bottom: 5px; /* Reduce margin bottom for very small screens */
+  }
+  .hwbuttonMech {
+    width: 150px; /* Reduce button width for very small screens */
+  }
+}
