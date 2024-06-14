@@ -15,9 +15,9 @@ function Header()
         <div className='header-part'>
             <React.Fragment>
                 <div className='logo'>
-                    <img src={BoschLogo} alt='Logo' onClick={() => navigate('/home')} className='boschlogo'/>
+                    <img src={BoschLogo} alt='Logo' onClick={() => navigate('/experience-center')} className='boschlogo'/>
                     {
-                    !isHomePage && <button onClick={() => navigate('/home')} className='homebutton'>Home</button>
+                    !isHomePage && <button onClick={() => navigate('/experience-center')} className='homebutton'>Home</button>
                     }
                 </div>
                 

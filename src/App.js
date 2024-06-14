@@ -13,7 +13,7 @@ function App() {
         <Header/>
       </header>
       <Routes>
-        <Route exact path='/home' element={<Homepage/>} />
+        <Route exact path='/experience-center' element={<Homepage/>} />
         <Route exact path='/ecuhardware' element={<Ecuhardware/>} />
         <Route exact path='/connector' element={<Connector/>} />
         <Route exact path='/mechanics' element={<Mechanics/>} />
